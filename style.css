@@ -107,3 +107,26 @@ a:hover {
   object-fit: cover; /* Ensures the image fits within the circular frame */
   border: 3px solid #ddd; /* Optional: Add a border around the photo */
 }
+
+
+.centered-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.centered-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.centered-icons .icon {
+  height: 32px;
+  width: auto;
+  opacity: 0.9;
+  transition: transform 0.2s ease;
+}
+
+.centered-icons .icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
