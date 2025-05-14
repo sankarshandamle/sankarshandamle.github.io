@@ -107,7 +107,7 @@
 
                 // Title
                 const title = document.createElement('h3');
-                title.textContent = pub.title;
+                title.innerHTML = `<span class="publication-number">#${index + 1}:</span> ${pub.title}`;
                 li.appendChild(title);
     
                 // Authors
