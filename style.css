@@ -47,13 +47,14 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: blue;
   font-weight: bold;
   padding: 10px 0; /* Add some space around the links */
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+  color: darkblue; 
 }
 
 /* Section headers */
