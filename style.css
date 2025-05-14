@@ -93,3 +93,17 @@ a:hover {
   /* color: blue; */
   margin-top: 5px;
 }
+
+
+.profile-photo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  border-radius: 50%; /* This makes the photo circular */
+  object-fit: cover; /* Ensures the image fits within the circular frame */
+  border: 3px solid #ddd; /* Optional: Add a border around the photo */
+}
