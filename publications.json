@@ -3,9 +3,16 @@
     "title": "AVeCQ: Anonymous Verifiable Crowdsourcing with Worker Qualities",
     "authors": "Vlasis Koutsos*, Sankarshan Damle*, Dimitrios Papadopoulos, Sujit Gujar, Dimitris Chatzopoulos",
     "venue": "IEEE Transactions on Dependable and Secure Computing (TDSC)",
-    "year": 2025,
+    "year": 2024,
     "pdf": "https://example.com/avecq.pdf",
     "code": "https://github.com/sankarshandamle/AVeCQ"
   },
+  {
+    "title": "Transaction Fee Mechanism Design for Ethereum",
+    "authors": "Sankarshan Damle, Sujit Gujar",
+    "venue": "AAMAS",
+    "year": 2023,
+    "pdf": "https://example.com/tfm.pdf",
+    "code": "https://github.com/sankarshandamle/eth-tfm"
+  }
 ]
-
