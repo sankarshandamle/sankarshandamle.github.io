@@ -46,3 +46,50 @@ a:hover {
   padding-bottom: 1rem;
   border-bottom: 1px solid #444;
 }
+
+#publications {
+  margin: 20px 0;
+}
+
+.publication-item {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.publication-item h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.publication-item p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.publication-number {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1em;
+  margin-right: 10px;
+}
+
+.venue {
+  color: red;
+}
+
+.pdf-link, .code-link {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.pdf-link:hover, .code-link:hover {
+  text-decoration: underline;
+}
+
+.note {
+  font-size: 0.9em;
+  color: blue;
+  margin-top: 5px;
+}

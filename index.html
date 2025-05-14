@@ -70,9 +70,15 @@
             const pubList = document.getElementById('pub-list');
             pubList.innerHTML = '';  // Clear the "Loading publications..." message
     
-            publications.forEach(pub => {
+            publications.forEach((pub, index) => {
                 const li = document.createElement('li');
                 li.classList.add('publication-item');
+    
+                // Number the publication
+                const number = document.createElement('span');
+                number.classList.add('publication-number');
+                number.textContent = `#${index + 1}`;
+                li.appendChild(number);
     
                 // Title
                 const title = document.createElement('h3');
@@ -84,33 +90,37 @@
                 authors.textContent = `Authors: ${pub.authors}`;
                 li.appendChild(authors);
     
-                // Venue
+                // Venue (styled in red)
                 const venue = document.createElement('p');
                 venue.textContent = `Venue: ${pub.venue} (${pub.year})`;
+                venue.classList.add('venue');
                 li.appendChild(venue);
     
-                // PDF Link (optional)
+                // PDF Link (formatted as [PDF])
                 if (pub.pdf) {
                     const pdfLink = document.createElement('a');
                     pdfLink.href = pub.pdf;
-                    pdfLink.textContent = 'PDF';
+                    pdfLink.textContent = '[PDF]';
                     pdfLink.target = '_blank';
+                    pdfLink.classList.add('pdf-link');
                     li.appendChild(pdfLink);
                 }
     
-                // Code Link (optional)
+                // Code Link (formatted as [Code])
                 if (pub.code) {
                     const codeLink = document.createElement('a');
                     codeLink.href = pub.code;
-                    codeLink.textContent = 'Code';
+                    codeLink.textContent = '[Code]';
                     codeLink.target = '_blank';
+                    codeLink.classList.add('code-link');
                     li.appendChild(codeLink);
                 }
     
-                // Note (optional)
+                // Note (styled in blue and smaller font)
                 if (pub.note) {
                     const note = document.createElement('p');
                     note.textContent = `Note: ${pub.note}`;
+                    note.classList.add('note');
                     li.appendChild(note);
                 }
     
@@ -123,6 +133,6 @@
             const pubList = document.getElementById('pub-list');
             pubList.innerHTML = '<li>Failed to load publications.</li>';
         });
-    </script>   
+    </script> 
 </body>
 </html>
