@@ -96,19 +96,17 @@
                 const pubList = document.getElementById('pub-list');
                 pubList.innerHTML = '';  // Clear the "Loading publications..." message
         
+                // Iterate over the publications array
                 publications.forEach((pub, index) => {
                     const li = document.createElement('li');
                     li.classList.add('publication-item');
-        
-                    // Number the publication
-                    const number = document.createElement('span');
-                    number.classList.add('publication-number');
-                    number.textContent = `#${index + 1}: `;  // Added colon here
-                    // li.appendChild(number);
 
-                    // Title
+                    // Calculate the descending publication number
+                    const publicationNumber = publications.length - index;
+
+                    // Title with descending counter
                     const title = document.createElement('h3');
-                    title.innerHTML = `<span class="publication-number">#${index + 1}:</span> ${pub.title}`;
+                    title.innerHTML = `<span class="publication-number">#${publicationNumber}:</span> ${pub.title}`;
                     li.appendChild(title);
         
                     // Authors
