@@ -63,27 +63,66 @@
   </footer>
 
   <script>
+    // Fetch and load the publications JSON
     fetch('publications.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        const container = document.querySelector('#publications ul');
-        container.innerHTML = ''; // clear placeholder
-        data.forEach(pub => {
-          const li = document.createElement('li');
-          li.innerHTML = `<b>${pub.title}</b> - ${pub.venue}, ${pub.year} <br><small>${pub.authors}</small>`;
-          if (pub.pdf) li.innerHTML += ` [<a href="${pub.pdf}">PDF</a>]`;
-          if (pub.code) li.innerHTML += ` [<a href="${pub.code}">Code</a>]`;
-          container.appendChild(li);
+        .then(response => response.json())
+        .then(publications => {
+            const pubList = document.getElementById('pub-list');
+            pubList.innerHTML = '';  // Clear the "Loading publications..." message
+    
+            publications.forEach(pub => {
+                const li = document.createElement('li');
+                li.classList.add('publication-item');
+    
+                // Title
+                const title = document.createElement('h3');
+                title.textContent = pub.title;
+                li.appendChild(title);
+    
+                // Authors
+                const authors = document.createElement('p');
+                authors.textContent = `Authors: ${pub.authors}`;
+                li.appendChild(authors);
+    
+                // Venue
+                const venue = document.createElement('p');
+                venue.textContent = `Venue: ${pub.venue} (${pub.year})`;
+                li.appendChild(venue);
+    
+                // PDF Link (optional)
+                if (pub.pdf) {
+                    const pdfLink = document.createElement('a');
+                    pdfLink.href = pub.pdf;
+                    pdfLink.textContent = 'PDF';
+                    pdfLink.target = '_blank';
+                    li.appendChild(pdfLink);
+                }
+    
+                // Code Link (optional)
+                if (pub.code) {
+                    const codeLink = document.createElement('a');
+                    codeLink.href = pub.code;
+                    codeLink.textContent = 'Code';
+                    codeLink.target = '_blank';
+                    li.appendChild(codeLink);
+                }
+    
+                // Note (optional)
+                if (pub.note) {
+                    const note = document.createElement('p');
+                    note.textContent = `Note: ${pub.note}`;
+                    li.appendChild(note);
+                }
+    
+                // Add the publication to the list
+                pubList.appendChild(li);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading publications:', error);
+            const pubList = document.getElementById('pub-list');
+            pubList.innerHTML = '<li>Failed to load publications.</li>';
         });
-      })
-      .catch(error => {
-        console.error('Failed to load publications:', error);
-      });
-    </script>    
+    </script>   
 </body>
 </html>
