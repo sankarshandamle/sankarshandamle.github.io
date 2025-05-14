@@ -1,133 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sankarshan Damle</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sankarshan Damle</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Sankarshan Damle</h1>
-        <p>Researcher in Game Theory, Mechanism Design, Trustworthy AI/ML, and Blockchain</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a researcher focusing on Game Theory, Mechanism Design, Trustworthy AI/ML, and Blockchain. My work aims to develop frameworks for fair and efficient decision-making in AI-driven systems.</p>
-    </section>
-    
-    <section id="research">
-        <h2>Research</h2>
-        <p>My research explores:</p>
-        <ul>
-            <li>Resource Allocation Mechanisms</li>
-            <li>Participatory Budgeting</li>
-            <li>Trust and Privacy in AI</li>
-        </ul>
-    </section>
-    
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul id="pub-list">
-            <li>Loading publications...</li>
-        </ul>
-    </section>
-    
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <p>I have taught courses on:</p>
-        <ul>
-            <li>Go Programming (covering functions, methods, pointers, goroutines, and data types)</li>
-            <li>Game Theory and Mechanism Design</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: sankarshan@example.com</p>
-        <p>GitHub: <a href="https://github.com/sankarshandamle">github.com/sankarshandamle</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Sankarshan Damle</p>
-    </footer>
+  <header>
+    <h1>Sankarshan Damle</h1>
+    <p>Researcher in Game Theory, Mechanism Design, Trustworthy AI/ML, and Blockchain</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #1e1e1e;
-        }
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a researcher focusing on Game Theory, Mechanism Design, Trustworthy AI/ML, and Blockchain. My work aims to develop frameworks for fair and efficient decision-making in AI-driven systems.</p>
+  </section>
 
-    <script>
-        fetch('publications.json')
-          .then(response => response.json())
-          .then(data => {
-              const list = document.getElementById('pub-list');
-              list.innerHTML = '';
-              data.sort((a, b) => b.year - a.year);
-              data.forEach(pub => {
-                  const li = document.createElement('li');
-                  li.innerHTML = `
-                      <strong>${pub.title}</strong><br>
-                      ${pub.authors}<br>
-                      <em>${pub.venue}</em> (${pub.year})<br>
-                      ${pub.pdf ? `[<a href="${pub.pdf}" target="_blank">PDF</a>]` : ''}
-                      ${pub.code ? `[<a href="${pub.code}" target="_blank">Code</a>]` : ''}
-                  `;
-                  list.appendChild(li);
-              });
-          })
-          .catch(err => {
-              const list = document.getElementById('pub-list');
-              list.innerHTML = '<li>Failed to load publications.</li>';
-              console.error('Error loading publications:', err);
-          });
-    </script>
+  <section id="research">
+    <h2>Research</h2>
+    <p>My research explores:</p>
+    <ul>
+      <li>Resource Allocation Mechanisms</li>
+      <li>Participatory Budgeting</li>
+      <li>Trust and Privacy in AI</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul id="pub-list">
+      <li>Loading publications...</li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p>I have taught courses on:</p>
+    <ul>
+      <li>Go Programming (covering functions, methods, pointers, goroutines, and data types)</li>
+      <li>Game Theory and Mechanism Design</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: sankarshan@example.com</p>
+    <p>GitHub: <a href="https://github.com/sankarshandamle">github.com/sankarshandamle</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sankarshan Damle</p>
+  </footer>
+
+  <script>
+    fetch('publications.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('pub-list');
+        list.innerHTML = '';
+        data.sort((a, b) => b.year - a.year);
+        data.forEach(pub => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <strong>${pub.title}</strong><br>
+            ${pub.authors}<br>
+            <em>${pub.venue}</em> (${pub.year})<br>
+            ${pub.pdf ? `[<a href="${pub.pdf}" target="_blank">PDF</a>]` : ''}
+            ${pub.code ? `[<a href="${pub.code}" target="_blank">Code</a>]` : ''}
+          `;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => {
+        const list = document.getElementById('pub-list');
+        list.innerHTML = '<li>Failed to load publications.</li>';
+        console.error('Error loading publications:', err);
+      });
+  </script>
 </body>
 </html>
