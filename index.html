@@ -64,28 +64,26 @@
 
   <script>
     fetch('publications.json')
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
       .then(data => {
-        const list = document.getElementById('pub-list');
-        list.innerHTML = '';
-        data.sort((a, b) => b.year - a.year);
+        const container = document.querySelector('#publications ul');
+        container.innerHTML = ''; // clear placeholder
         data.forEach(pub => {
           const li = document.createElement('li');
-          li.innerHTML = `
-            <strong>${pub.title}</strong><br>
-            ${pub.authors}<br>
-            <em>${pub.venue}</em> (${pub.year})<br>
-            ${pub.pdf ? `[<a href="${pub.pdf}" target="_blank">PDF</a>]` : ''}
-            ${pub.code ? `[<a href="${pub.code}" target="_blank">Code</a>]` : ''}
-          `;
-          list.appendChild(li);
+          li.innerHTML = `<b>${pub.title}</b> - ${pub.venue}, ${pub.year} <br><small>${pub.authors}</small>`;
+          if (pub.pdf) li.innerHTML += ` [<a href="${pub.pdf}">PDF</a>]`;
+          if (pub.code) li.innerHTML += ` [<a href="${pub.code}">Code</a>]`;
+          container.appendChild(li);
         });
       })
-      .catch(err => {
-        const list = document.getElementById('pub-list');
-        list.innerHTML = '<li>Failed to load publications.</li>';
-        console.error('Error loading publications:', err);
+      .catch(error => {
+        console.error('Failed to load publications:', error);
       });
-  </script>
+    </script>    
 </body>
 </html>
