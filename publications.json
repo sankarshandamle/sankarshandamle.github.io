@@ -4,7 +4,8 @@
     "authors": "Vlasis Koutsos*, Sankarshan Damle*, Dimitrios Papadopoulos, Sujit Gujar, Dimitris Chatzopoulos",
     "venue": "IEEE Transactions on Dependable and Secure Computing (TDSC)",
     "year": 2025,
-    "pdf": "https://doi.org/10.1109/TDSC.2024.3396342"
+    "pdf": "https://doi.org/10.1109/TDSC.2024.3396342",
+    "code": "https://github.com/sankarshandamle/AVeCQ"
   },
   {
     "title": "Differentially Private Multi-Agent Constraint Optimization",

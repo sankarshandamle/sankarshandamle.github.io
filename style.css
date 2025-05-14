@@ -68,7 +68,7 @@ a:hover {
 
 .publication-number {
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
   font-size: 1.1em;
   margin-right: 10px;
 }
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .note {
-  font-size: 0.9em;
-  color: blue;
+  font-size: 0.7em;
+  /* color: blue; */
   margin-top: 5px;
 }
