@@ -3,16 +3,164 @@
     "title": "AVeCQ: Anonymous Verifiable Crowdsourcing with Worker Qualities",
     "authors": "Vlasis Koutsos*, Sankarshan Damle*, Dimitrios Papadopoulos, Sujit Gujar, Dimitris Chatzopoulos",
     "venue": "IEEE Transactions on Dependable and Secure Computing (TDSC)",
-    "year": 2024,
-    "pdf": "https://example.com/avecq.pdf",
-    "code": "https://github.com/sankarshandamle/AVeCQ"
+    "year": 2025,
+    "pdf": "https://doi.org/10.1109/TDSC.2024.3396342"
   },
   {
-    "title": "Transaction Fee Mechanism Design for Ethereum",
-    "authors": "Sankarshan Damle, Sujit Gujar",
-    "venue": "AAMAS",
+    "title": "Differentially Private Multi-Agent Constraint Optimization",
+    "authors": "Sankarshan Damle, Aleksei Triastcyn, Boi Faltings, and Sujit Gujar",
+    "venue": "Journal of Autonomous Agents and Multi-Agent Systems (JAAMAS)",
+    "year": 2024,
+    "pdf": "https://rdcu.be/dAaCd",
+    "code": "https://github.com/magnetar-iiith/PGiBBS",
+    "note": "Early versions of this work also appeared at WI-IAT '21 and PPAI@AAAI '21"
+  },
+  {
+    "title": "Robust In-Context Learning via Multi-Armed Bandit-Based Partition Selection",
+    "authors": "Varul Srivastava, Sankarshan Damle, Manisha Padala",
+    "venue": "DATA-FM @ ICLR '25",
+    "year": 2025,
+    "pdf": "https://openreview.net/forum?id=NzERpVgzsC",
+    "note": "Code and other material to be made available soon!"
+  },
+  {
+    "title": "How do Active Dendrite Networks Mitigate Catastrophic Forgetting?",
+    "authors": "Sankarshan Damle, Satya Lokam, Navin Goyal",
+    "venue": "NeuroAI@NeurIPS '24 (Poster)",
+    "year": 2024,
+    "pdf": "https://openreview.net/pdf?id=NoMgGHzJEG"
+  },
+  {
+    "title": "Exploring Continual Fine-Tuning for Enhancing Language Ability in Large Language Models",
+    "authors": "Divyanshu Aggarwal*, Sankarshan Damle*, Navin Goyal, Satya Lokam, Sunayana Sitaram",
+    "venue": "FITML@NeurIPS '24 (Poster) and ContinualFoMo@NeurIPS '24 (Oral)",
+    "year": 2024,
+    "pdf": "https://arxiv.org/pdf/2410.16006"
+  },
+  {
+    "title": "No Transaction Fees? No Problem! Achieving Fairness in Transaction Fee Mechanism Design",
+    "authors": "Sankarshan Damle, Varul Srivastava, and Sujit Gujar",
+    "venue": "ECAI '24",
+    "year": 2024,
+    "pdf": "https://example.com/no-fees.pdf"
+  },
+  {
+    "title": "Designing Redistribution Mechanisms for Reducing Transaction Fees in Blockchains",
+    "authors": "Sankarshan Damle*, Manisha Padala*, and Sujit Gujar",
+    "venue": "AAMAS '24",
+    "year": 2024,
+    "pdf": "https://example.com/redistribution.pdf"
+  },
+  {
+    "title": "Analyzing Crowdfunding of Public Projects Under Dynamic Beliefs",
+    "authors": "Sankarshan Damle and Sujit Gujar",
+    "venue": "AAMAS '24",
+    "year": 2024,
+    "pdf": "https://example.com/crowdfunding.pdf"
+  },
+  {
+    "title": "F3: Fair and Federated Face Attribute Classification with Heterogeneous Data",
+    "authors": "Samhita Kanaparthy, Manisha Padala, Sankarshan Damle, Ravi Kiran Sarvadevabhatla, and Sujit Gujar",
+    "venue": "PAKDD '23",
     "year": 2023,
-    "pdf": "https://example.com/tfm.pdf",
-    "code": "https://github.com/sankarshandamle/eth-tfm"
+    "pdf": "https://example.com/f3.pdf"
+  },
+  {
+    "title": "Combinatorial Civic Crowdfunding with Budgeted Agents: Welfare Optimality at Equilibrium and Optimal Deviation",
+    "authors": "Sankarshan Damle*, Manisha Padala*, and Sujit Gujar",
+    "venue": "AAAI '23",
+    "year": 2023,
+    "pdf": "https://example.com/ccc.pdf"
+  },
+  {
+    "title": "Differentially Private Federated Combinatorial Bandits with Constraint",
+    "authors": "Sambhav Solanki, Samhita Kanaparthy, Sankarshan Damle, and Sujit Gujar",
+    "venue": "ECML PKDD '22",
+    "year": 2022,
+    "pdf": "https://example.com/dp-federated.pdf"
+  },
+  {
+    "title": "Tiramisu: Layering Consensus Protocols for Scalable and Secure Blockchains",
+    "authors": "Anurag Jain, Sanidhay Arora, Sankarshan Damle, and Sujit Gujar",
+    "venue": "IEEE ICBC '22",
+    "year": 2022,
+    "pdf": "https://example.com/tiramisu.pdf"
+  },
+  {
+    "title": "REFORM: Reputation Based Fair and Temporal Reward Framework for Crowdsourcing",
+    "authors": "Samhita Kanaparthy, Sankarshan Damle, and Sujit Gujar",
+    "venue": "AAMAS '22",
+    "year": 2022,
+    "pdf": "https://example.com/reform.pdf"
+  },
+  {
+    "title": "Fair Federated Learning for Heterogeneous Face Data",
+    "authors": "Samhita Kanaparthy, Manisha Padala, Sankarshan Damle, and Sujit Gujar",
+    "venue": "ACM IKDD CODS COMAD '22",
+    "year": 2022,
+    "pdf": "https://example.com/fair-fl.pdf"
+  },
+  {
+    "title": "Learning Equilibrium Contributions in Multi-project Civic Crowdfunding",
+    "authors": "Manisha Padala, Sankarshan Damle, and Sujit Gujar",
+    "venue": "IEEE/WIC/ACM WI-IAT '21",
+    "year": 2021,
+    "pdf": "https://example.com/equilibrium.pdf"
+  },
+  {
+    "title": "Blockchain-based Practical Multi-agent Secure Comparison and its Application in Auctions",
+    "authors": "Sankarshan Damle, Boi Faltings, and Sujit Gujar",
+    "venue": "IEEE/WIC/ACM WI-IAT '21",
+    "year": 2021,
+    "pdf": "https://example.com/blockchain-secure.pdf"
+  },
+  {
+    "title": "Differentially Private Multi-Agent Constraint Optimization",
+    "authors": "Sankarshan Damle, Aleksei Triastcyn, Boi Faltings, and Sujit Gujar",
+    "venue": "IEEE/WIC/ACM WI-IAT '21",
+    "year": 2021,
+    "pdf": "https://example.com/dp-maco-wiiat.pdf"
+  },
+  {
+    "title": "Federated Learning Meets Fairness and Differential Privacy",
+    "authors": "Padala Manisha, Sankarshan Damle, and Sujit Gujar",
+    "venue": "ICONIP '21",
+    "year": 2021,
+    "pdf": "https://example.com/fl-fairness.pdf"
+  },
+  {
+    "title": "Designing Refund Bonus Schemes for Provision Point Mechanism in Civic Crowdfunding",
+    "authors": "Sankarshan Damle, Moin Hussain Moti, Praphul Chandra, and Sujit Gujar",
+    "venue": "PRICAI '21",
+    "year": 2021,
+    "pdf": "https://example.com/refund-bonus.pdf"
+  },
+  {
+    "title": "FASTEN: Fair and Secure Distributed Voting Using Smart Contracts",
+    "authors": "Sankarshan Damle, Sujit Gujar, and Moin Hussain Moti",
+    "venue": "IEEE ICBC '21",
+    "year": 2021,
+    "pdf": "https://example.com/fasten.pdf"
+  },
+  {
+    "title": "Civic Crowdfunding for Agents with Negative Valuations and Agents with Asymmetric Beliefs",
+    "authors": "Sankarshan Damle, Moin Hussain Moti, Praphul Chandra, and Sujit Gujar",
+    "venue": "IJCAI '19",
+    "year": 2019,
+    "pdf": "https://example.com/civic-crowdfunding.pdf"
+  },
+  {
+    "title": "Aggregating Citizen Preferences for Public Projects Through Civic Crowdfunding",
+    "authors": "Sankarshan Damle, Moin Hussain Moti, Praphul Chandra, and Sujit Gujar",
+    "venue": "AAMAS '19",
+    "year": 2019,
+    "pdf": "https://example.com/aggregating-preferences.pdf"
+  },
+  {
+    "title": "A Truthful, Privacy-Preserving, Approximately Efficient Combinatorial Auction For Single-minded Bidders",
+    "authors": "Sankarshan Damle, Boi Faltings, and Sujit Gujar",
+    "venue": "AAMAS '19",
+    "year": 2019,
+    "pdf": "https://example.com/truthful-auction.pdf"
   }
 ]
