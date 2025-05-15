@@ -152,6 +152,8 @@
         fetch('publications.json')
             .then(response => response.json())
             .then(publications => {
+                // Sort publications by year descending (newest first)
+                publications.sort((a, b) => b.year - a.year);
                 const pubList = document.getElementById('pub-list');
                 pubList.innerHTML = '';  // Clear the "Loading publications..." message
         
