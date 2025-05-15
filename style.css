@@ -178,3 +178,11 @@ a:hover {
   transform: scale(1.2);
   opacity: 1;
 }
+
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ccc, transparent);
+  margin: 3rem 0; /* Adjust spacing as needed */
+}
