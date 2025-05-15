@@ -29,7 +29,7 @@ header {
 }
 
 main {
-  margin-left: 240px; /* Account for the width of the header */
+  margin-left: 15%; /* Account for the width of the header */
   padding: 40px;
   width: calc(100% - 15%); /* Adjust width to fill the remaining space */
   height: 100vh; /* Ensure main content covers full page height */
