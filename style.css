@@ -13,6 +13,8 @@ html, body {
   display: flex;
   height: 100%; /* Make sure container takes full height */
   width: 100%; /* Make sure container takes full width */
+  gap: 20px; /* gap between header and main */
+  padding: 0 20px;
 }
 
 header {
