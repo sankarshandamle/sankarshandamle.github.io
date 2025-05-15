@@ -22,20 +22,22 @@ header {
   top: 0;
   left: 0;
   width: 15%;
+  min-width: 200px;     /* Prevent header from becoming too narrow */
+  max-width: 300px;     /* Prevent it from growing too wide on large screens */
   height: 100vh;
   background-color: #f8f8f8;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 main {
-  margin-left: 15%; /* Account for the width of the header */
+  margin-left: clamp(200px, 15%, 300px); /* Match the header's responsive width */
   padding: 40px;
-  width: calc(100% - 15%); /* Adjust width to fill the remaining space */
-  height: 100vh; /* Ensure main content covers full page height */
-  overflow-y: auto; /* Allow scrolling if content exceeds the viewport height */
+  height: 100vh;
+  overflow-y: auto;
   box-sizing: border-box;
 }
 
