@@ -5,7 +5,8 @@
     "venue": "IEEE Transactions on Dependable and Secure Computing (TDSC)",
     "year": 2025,
     "pdf": "https://doi.org/10.1109/TDSC.2024.3396342",
-    "code": "https://github.com/sankarshandamle/AVeCQ"
+    "code": "https://github.com/sankarshandamle/AVeCQ",
+    "type": "Journal"
   },
   {
     "title": "Differentially Private Multi-Agent Constraint Optimization",
@@ -14,7 +15,8 @@
     "year": 2024,
     "pdf": "https://rdcu.be/dAaCd",
     "code": "https://github.com/magnetar-iiith/PGiBBS",
-    "note": "Early versions of this work also appeared at WI-IAT and PPAI@AAAI"
+    "note": "Early versions of this work also appeared at WI-IAT and PPAI@AAAI",
+    "type": "Journal"
   },
   {
     "title": "Robust In-Context Learning via Multi-Armed Bandit-Based Partition Selection",
@@ -22,21 +24,24 @@
     "venue": "DATA-FM @ ICLR",
     "year": 2025,
     "pdf": "https://openreview.net/forum?id=NzERpVgzsC",
-    "note": "Code and other material to be made available soon!"
-  },
+    "note": "Code and other material to be made available soon!",
+    "type": "Workshop"
+},
   {
     "title": "How do Active Dendrite Networks Mitigate Catastrophic Forgetting?",
     "authors": "Sankarshan Damle, Satya Lokam, Navin Goyal",
     "venue": "NeuroAI@NeurIPS (Poster)",
     "year": 2024,
-    "pdf": "https://openreview.net/pdf?id=NoMgGHzJEG"
+    "pdf": "https://openreview.net/pdf?id=NoMgGHzJEG",
+    "type": "Workshop"
   },
   {
     "title": "Exploring Continual Fine-Tuning for Enhancing Language Ability in Large Language Models",
     "authors": "Divyanshu Aggarwal*, Sankarshan Damle*, Navin Goyal, Satya Lokam, Sunayana Sitaram",
     "venue": "FITML@NeurIPS (Poster) and ContinualFoMo@NeurIPS (Oral)",
     "year": 2024,
-    "pdf": "https://arxiv.org/pdf/2410.16006"
+    "pdf": "https://arxiv.org/pdf/2410.16006",
+    "type": "Workshop"
   },
   {
     "title": "No Transaction Fees? No Problem! Achieving Fairness in Transaction Fee Mechanism Design",
@@ -44,14 +49,16 @@
     "venue": "ECAI",
     "year": 2024,
     "pdf": "https://ebooks.iospress.nl/doi/10.3233/FAIA240924",
-    "note": "First appeared as an Extended Abstract at AAMAS"
+    "note": "First appeared as an Extended Abstract at AAMAS",
+    "type": "Conference"
   },
   {
     "title": "Designing Redistribution Mechanisms for Reducing Transaction Fees in Blockchains",
     "authors": "Sankarshan Damle*, Manisha Padala*, and Sujit Gujar",
     "venue": "AAMAS",
     "year": 2024,
-    "pdf": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p416.pdf"
+    "pdf": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p416.pdf",
+    "type": "Conference"
   },
   {
     "title": "Analyzing Crowdfunding of Public Projects Under Dynamic Beliefs",
@@ -59,7 +66,8 @@
     "venue": "AAMAS",
     "year": 2024,
     "pdf": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2225.pdf",
-    "note": "Extended Abstract"
+    "note": "Extended Abstract",
+    "type": "Conference"
   },
   {
     "title": "F3: Fair and Federated Face Attribute Classification with Heterogeneous Data",
@@ -67,7 +75,8 @@
     "venue": "PAKDD",
     "year": 2023,
     "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-33374-3_38",
-    "code": "https://github.com/magnetar-iiith/F3"
+    "code": "https://github.com/magnetar-iiith/F3",
+    "type": "Conference"
   },
   {
     "title": "Combinatorial Civic Crowdfunding with Budgeted Agents: Welfare Optimality at Equilibrium and Optimal Deviation",
@@ -75,14 +84,16 @@
     "venue": "AAAI",
     "year": 2023,
     "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/25693",
-    "note": "A preliminary version of this work also appeared at GAIW@AAMAS"
+    "note": "A preliminary version of this work also appeared at GAIW@AAMAS",
+    "type": "Conference"
   },
   {
     "title": "Differentially Private Federated Combinatorial Bandits with Constraint",
     "authors": "Sambhav Solanki, Samhita Kanaparthy, Sankarshan Damle, and Sujit Gujar",
     "venue": "ECML PKDD",
     "year": 2022,
-    "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-26412-2_38"
+    "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-26412-2_38",
+    "type": "Conference"
   },
   {
     "title": "Tiramisu: Layering Consensus Protocols for Scalable and Secure Blockchains",
@@ -90,7 +101,8 @@
     "venue": "IEEE ICBC",
     "year": 2022,
     "pdf": "https://ieeexplore.ieee.org/document/9805562",
-    "note": "A preliminary version of this work also appeared at GTiB@WINE"
+    "note": "A preliminary version of this work also appeared at GTiB@WINE",
+    "type": "Conference"
   },
   {
     "title": "REFORM: Reputation Based Fair and Temporal Reward Framework for Crowdsourcing",
@@ -98,7 +110,8 @@
     "venue": "AAMAS",
     "year": 2022,
     "pdf": "https://dl.acm.org/doi/abs/10.5555/3535850.3536064",
-    "note": "Extended Abstract"
+    "note": "Extended Abstract",
+    "type": "Conference"
   },
   {
     "title": "Fair Federated Learning for Heterogeneous Face Data",
@@ -106,14 +119,16 @@
     "venue": "ACM IKDD CODS COMAD",
     "year": 2022,
     "pdf": "https://dl.acm.org/doi/abs/10.1145/3493700.3493750",
-    "note": "Young Researchers' Symposium Track"
+    "note": "Young Researchers' Symposium Track",
+    "type": "Conference"
   },
   {
     "title": "Learning Equilibrium Contributions in Multi-project Civic Crowdfunding",
     "authors": "Manisha Padala, Sankarshan Damle, and Sujit Gujar",
     "venue": "IEEE/WIC/ACM WI-IAT",
     "year": 2021,
-    "pdf": "https://dl.acm.org/doi/abs/10.1145/3486622.3493918"
+    "pdf": "https://dl.acm.org/doi/abs/10.1145/3486622.3493918",
+    "type": "Conference"
   },
   {
     "title": "Blockchain-based Practical Multi-agent Secure Comparison and its Application in Auctions",
@@ -121,7 +136,8 @@
     "venue": "IEEE/WIC/ACM WI-IAT",
     "year": 2021,
     "pdf": "https://dl.acm.org/doi/abs/10.1145/3486622.3493918",
-    "note": "First appeared at AAMAS as an extended abstract"
+    "note": "First appeared at AAMAS as an extended abstract",
+    "type": "Conference"
   },
   {
     "title": "Federated Learning Meets Fairness and Differential Privacy",
@@ -130,7 +146,8 @@
     "year": 2021,
     "pdf": "https://link.springer.com/chapter/10.1007/978-3-030-92310-5_80",
     "code": "https://github.com/magnetar-iiith/FPFL",
-    "note": "Also received the Best Paper Award at the Deployable AI Conference (DAI)"
+    "note": "Also received the Best Paper Award at the Deployable AI Conference (DAI)",
+    "type": "Conference"
   },
   {
     "title": "Designing Refund Bonus Schemes for Provision Point Mechanism in Civic Crowdfunding",
@@ -138,21 +155,24 @@
     "venue": "PRICAI",
     "year": 2021,
     "pdf": "https://link.springer.com/chapter/10.1007/978-3-030-89188-6_2",
-    "note": "A preliminary version of this work also appeared at GAIW@AAMAS"
+    "note": "A preliminary version of this work also appeared at GAIW@AAMAS",
+    "type": "Conference"
   },
   {
     "title": "FASTEN: Fair and Secure Distributed Voting Using Smart Contracts",
     "authors": "Sankarshan Damle, Sujit Gujar, and Moin Hussain Moti",
     "venue": "IEEE ICBC",
     "year": 2021,
-    "pdf": "https://ieeexplore.ieee.org/document/9805562"
+    "pdf": "https://ieeexplore.ieee.org/document/9805562",
+    "type": "Conference"
   },
   {
     "title": "Civic Crowdfunding for Agents with Negative Valuations and Agents with Asymmetric Beliefs",
     "authors": "Sankarshan Damle, Moin Hussain Moti, Praphul Chandra, and Sujit Gujar",
     "venue": "IJCAI",
     "year": 2019,
-    "pdf": "https://dl.acm.org/doi/10.5555/3367032.3367063"
+    "pdf": "https://dl.acm.org/doi/10.5555/3367032.3367063",
+    "type": "Conference"
   },
   {
     "title": "Aggregating Citizen Preferences for Public Projects Through Civic Crowdfunding",
@@ -160,6 +180,7 @@
     "venue": "AAMAS",
     "year": 2019,
     "pdf": "https://dl.acm.org/doi/10.5555/3306127.3331963",
-    "note": "Extended Abstract"
+    "note": "Extended Abstract",
+    "type": "Conference"
   }
 ]

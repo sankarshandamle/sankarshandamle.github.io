@@ -175,77 +175,94 @@
       </footer>
 
       <script>
-        // Fetch and load the publications JSON
         fetch('publications.json')
-            .then(response => response.json())
-            .then(publications => {
-                // Sort publications by year descending (newest first)
-                publications.sort((a, b) => b.year - a.year);
-                const pubList = document.getElementById('pub-list');
-                pubList.innerHTML = '';  // Clear the "Loading publications..." message
-        
-                // Iterate over the publications array
-                publications.forEach((pub, index) => {
-                    const li = document.createElement('li');
-                    li.classList.add('publication-item');
+          .then(response => response.json())
+          .then(publications => {
+            // Sort all publications by year descending
+            publications.sort((a, b) => b.year - a.year);
 
-                    // Calculate the descending publication number
-                    const publicationNumber = publications.length - index;
+            const pubList = document.getElementById('pub-list');
+            pubList.innerHTML = '';
 
-                    // Title with descending counter
-                    const title = document.createElement('h3');
-                    title.innerHTML = `<span class="publication-number">${publicationNumber}:</span> ${pub.title}`;
-                    li.appendChild(title);
-        
-                    // Authors
-                    const authors = document.createElement('p');
-                    authors.textContent = `Authors: ${pub.authors}`;
-                    li.appendChild(authors);
-        
-                    // Venue (styled in red)
-                    const venue = document.createElement('p');
-                    venue.textContent = `Venue: ${pub.venue} (${pub.year})`;
-                    venue.classList.add('venue');
-                    li.appendChild(venue);
-        
-                    // PDF Link (formatted as [PDF])
-                    if (pub.pdf) {
-                        const pdfLink = document.createElement('a');
-                        pdfLink.href = pub.pdf;
-                        pdfLink.textContent = '[PDF]';
-                        pdfLink.target = '_blank';
-                        pdfLink.classList.add('pdf-link');
-                        li.appendChild(pdfLink);
-                    }
-        
-                    // Code Link (formatted as [Code])
-                    if (pub.code) {
-                        const codeLink = document.createElement('a');
-                        codeLink.href = pub.code;
-                        codeLink.textContent = '[Code]';
-                        codeLink.target = '_blank';
-                        codeLink.classList.add('code-link');
-                        li.appendChild(codeLink);
-                    }
-        
-                    // Note (styled in blue and smaller font)
-                    if (pub.note) {
-                        const note = document.createElement('p');
-                        note.textContent = `Note: ${pub.note}`;
-                        note.classList.add('note');
-                        li.appendChild(note);
-                    }
-        
-                    // Add the publication to the list
-                    pubList.appendChild(li);
-                });
-            })
-            .catch(error => {
-                console.error('Error loading publications:', error);
-                const pubList = document.getElementById('pub-list');
-                pubList.innerHTML = '<li>Failed to load publications.</li>';
+            // Count how many publications per type
+            const countsByType = {
+              Journal: publications.filter(p => p.type === 'Journal').length,
+              Conference: publications.filter(p => p.type === 'Conference').length,
+              Workshop: publications.filter(p => p.type === 'Workshop').length,
+            };
+
+            // Counters to track how many we have assigned so far per type
+            const assignedCounters = {
+              Journal: 0,
+              Conference: 0,
+              Workshop: 0,
+            };
+
+            const typePrefix = {
+              Journal: 'J',
+              Conference: 'C',
+              Workshop: 'W',
+            };
+
+            publications.forEach(pub => {
+              assignedCounters[pub.type]++;
+
+              // Descending number = total count - assigned + 1
+              const descendingNumber = countsByType[pub.type] - assignedCounters[pub.type] + 1;
+
+              const prefix = `[${typePrefix[pub.type]}${descendingNumber}]`;
+
+              const li = document.createElement('li');
+              li.classList.add('publication-item');
+
+              const title = document.createElement('h3');
+              title.innerHTML = `<span class="publication-number">${prefix}</span> ${pub.title}`;
+              li.appendChild(title);
+
+              const authors = document.createElement('p');
+              authors.textContent = `Authors: ${pub.authors}`;
+              li.appendChild(authors);
+
+              const venue = document.createElement('p');
+              venue.textContent = `Venue: ${pub.venue} (${pub.year})`;
+              venue.classList.add('venue');
+              li.appendChild(venue);
+
+              if (pub.pdf) {
+                const pdfLink = document.createElement('a');
+                pdfLink.href = pub.pdf;
+                pdfLink.textContent = '[PDF]';
+                pdfLink.target = '_blank';
+                pdfLink.classList.add('pdf-link');
+                li.appendChild(pdfLink);
+              }
+
+              if (pub.code) {
+                const codeLink = document.createElement('a');
+                codeLink.href = pub.code;
+                codeLink.textContent = '[Code]';
+                codeLink.target = '_blank';
+                codeLink.classList.add('code-link');
+                li.appendChild(codeLink);
+              }
+
+              if (pub.note) {
+                const note = document.createElement('p');
+                note.textContent = `Note: ${pub.note}`;
+                note.classList.add('note');
+                li.appendChild(note);
+              }
+
+              pubList.appendChild(li);
             });
-        </script>
+          })
+          .catch(error => {
+            console.error('Error loading publications:', error);
+            const pubList = document.getElementById('pub-list');
+            pubList.innerHTML = '<li>Failed to load publications.</li>';
+          });
+      </script>
+
       </div>
     </main>
   </body> 
