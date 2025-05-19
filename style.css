@@ -1,46 +1,80 @@
-/* Ensure full height for body and html */
+/* Import modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Color Variables */
+:root {
+  --color-bg: #f0f4f8;
+  --color-bg-panel: #ffffff;
+  --color-text-primary: #333333;
+  --color-text-secondary: #555555;
+  --color-accent: #007acc;
+  --color-accent-hover: #005ea2;
+  --color-border: #e0e0e0;
+  --color-shadow: rgba(0,0,0,0.1);
+}
+
+/* Base Styles */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: white;
-  color: black;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
   width: 100%;
+  line-height: 1.6;
 }
 
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--color-accent-hover);
+}
+
+/* Layout Containers */
 .container {
   display: flex;
-  height: 100%; /* Make sure container takes full height */
-  width: 100%; /* Make sure container takes full width */
-  gap: 20px; /* gap between header and main */
+  height: 100%;
+  width: 100%;
+  gap: 20px;
   padding: 0 20px;
 }
 
+/* Sidebar Header */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 15%;
-  min-width: 200px;     /* Prevent header from becoming too narrow */
-  max-width: 300px;     /* Prevent it from growing too wide on large screens */
+  min-width: 200px;
+  max-width: 300px;
   height: 100vh;
-  background-color: #f8f8f8;
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bg-panel);
+  padding: 24px;
+  box-shadow: 2px 0 8px var(--color-shadow);
+  border-radius: 0 10px 10px 0;
   overflow-y: auto;
   z-index: 10;
   box-sizing: border-box;
 }
 
+/* Main Content */
 main {
-  margin-left: clamp(200px, 15%, 300px); /* Match the header's responsive width */
-  padding: 40px;
+  margin-left: clamp(200px, 15%, 300px);
+  padding: 40px 30px;
   height: 100vh;
   overflow-y: auto;
+  background-color: var(--color-bg-panel);
+  box-shadow: 0 2px 12px var(--color-shadow);
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
@@ -53,17 +87,19 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
-  color: blue;  /* Set the color to blue */
-  font-weight: bold;
-  padding: 10px 0;
+  font-weight: 600;
+  padding: 8px 0;
+  border-radius: 4px;
+  display: block;
 }
 
 nav a:hover {
-  color: darkblue; /* Optional hover effect */
+  background-color: #e1f0ff;
+  color: var(--color-accent-hover);
+  text-decoration: none;
 }
 
-/* Section headers */
+/* Section Headers */
 section h2 {
   color: #222222;
 }
@@ -78,14 +114,7 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-a {
-  color: #1e90ff;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
+/* Publications List */
 #pub-list {
   list-style-type: none;
   padding-left: 0;
@@ -93,8 +122,8 @@ a:hover {
 
 #pub-list li {
   margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  /* border-bottom: 1px solid #444; */
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
 }
 
 #publications {
@@ -107,59 +136,65 @@ a:hover {
 }
 
 .publication-item h3 {
-  font-size: 1rem;  /* reduced from 1.2em */
-  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
 }
 
 .publication-item p {
-  font-size: 0.875rem; /* smaller paragraph text */
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
   margin: 4px 0;
 }
 
 .publication-number {
-  font-weight: bold;
-  /* color: #333; */
-  font-size: 0.95rem;  /* smaller number */
+  font-weight: 700;
+  font-size: 0.95rem;
   margin-right: 0.5rem;
+  color: var(--color-text-primary);
 }
 
-
+/* Venue text in a warm tone */
 .venue {
   color: maroon;
 }
 
+/* Links for PDF and Code */
 .pdf-link, .code-link {
-  color: #0073e6;
+  color: var(--color-accent);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   margin-right: 10px;
+  transition: color 0.3s ease;
 }
 
 .pdf-link:hover, .code-link:hover {
   text-decoration: underline;
+  color: var(--color-accent-hover);
 }
 
+/* Notes styled smaller and blue-ish */
 .note {
   font-size: smaller;
-  color: lightblue;
+  color: #5599ee;
   margin-top: 5px;
 }
 
-
+/* Profile photo styles */
 .profile-photo {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .photo {
-  width: 150px; /* Adjust the size as needed */
-  height: 150px; /* Adjust the size as needed */
-  border-radius: 50%; /* This makes the photo circular */
-  object-fit: cover; /* Ensures the image fits within the circular frame */
-  border: 3px solid #ddd; /* Optional: Add a border around the photo */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd;
 }
 
-
+/* Icons container */
 .centered-icons {
   text-align: center;
   margin-top: 20px;
@@ -174,18 +209,18 @@ a:hover {
   height: 52px;
   width: auto;
   opacity: 0.9;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .centered-icons .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
   opacity: 1;
 }
 
-
+/* Section divider with gradient */
 .section-divider {
   border: none;
   height: 1px;
   background: linear-gradient(to right, transparent, #ccc, transparent);
-  margin: 3rem 0; /* Adjust spacing as needed */
+  margin: 3rem 0;
 }
