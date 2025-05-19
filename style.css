@@ -269,24 +269,42 @@ footer {
   font-family: 'Inter', Arial, sans-serif;
 }
 
+
+
+/* Wrapper that centers the links on the page */
+.profile-links-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+/* Make sure .btn-group has appropriate padding and box feel */
+.profile-links.btn-group {
+  display: inline-flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 4px;
+}
+
+/* Individual Buttons */
 .profile-links.btn-group .btn {
-  background-color: #3b82f6;
-  color: white;
-  padding: 12px 24px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  padding: 10px 24px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-align: center;
   text-decoration: none;
-  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  flex-grow: 1;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
-  user-select: none;
+  border-right: 1px solid #e5e7eb;
+  transition: background-color 0.25s ease, color 0.25s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
+  min-width: 140px;
 }
 
 .profile-links.btn-group .btn:last-child {
@@ -295,6 +313,7 @@ footer {
 
 .profile-links.btn-group .btn:hover,
 .profile-links.btn-group .btn:focus {
-  background-color: #2563eb;
+  background-color: #e0e7ff;
+  color: #1d4ed8;
   outline: none;
 }
