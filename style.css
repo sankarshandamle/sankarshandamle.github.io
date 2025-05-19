@@ -85,10 +85,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 #pub-list {
   list-style-type: none;
   padding-left: 0;
 }
+
 #pub-list li {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
@@ -100,26 +102,27 @@ a:hover {
 }
 
 .publication-item {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   list-style-type: none;
 }
 
 .publication-item h3 {
-  font-size: 1.2em;
+  font-size: 1rem;  /* reduced from 1.2em */
   margin: 0;
 }
 
 .publication-item p {
-  font-size: 1em;
-  margin: 5px 0;
+  font-size: 0.875rem; /* smaller paragraph text */
+  margin: 4px 0;
 }
 
 .publication-number {
   font-weight: bold;
   /* color: #333; */
-  font-size: 1.1em;
-  margin-right: 10px;
+  font-size: 0.95rem;  /* smaller number */
+  margin-right: 0.5rem;
 }
+
 
 .venue {
   color: maroon;
