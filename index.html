@@ -172,94 +172,104 @@
         <p>&copy; 2025 Sankarshan Damle</p>
       </footer>
 
-      <script>
-        fetch('publications.json')
-          .then(response => response.json())
-          .then(publications => {
-            // Sort all publications by year descending
-            publications.sort((a, b) => b.year - a.year);
+    <script>
+      fetch('publications.json')
+        .then(response => response.json())
+        .then(publications => {
+          // Sort all publications by year descending
+          publications.sort((a, b) => b.year - a.year);
 
-            const pubList = document.getElementById('pub-list');
-            pubList.innerHTML = '';
+          const pubList = document.getElementById('pub-list');
+          pubList.innerHTML = '';
 
-            // Count how many publications per type
-            const countsByType = {
-              Journal: publications.filter(p => p.type === 'Journal').length,
-              Conference: publications.filter(p => p.type === 'Conference').length,
-              Workshop: publications.filter(p => p.type === 'Workshop').length,
-            };
+          // Count how many publications per type
+          const countsByType = {
+            Journal: publications.filter(p => p.type === 'Journal').length,
+            Conference: publications.filter(p => p.type === 'Conference').length,
+            Workshop: publications.filter(p => p.type === 'Workshop').length,
+          };
 
-            // Counters to track how many we have assigned so far per type
-            const assignedCounters = {
-              Journal: 0,
-              Conference: 0,
-              Workshop: 0,
-            };
+          // Counters to track how many we have assigned so far per type
+          const assignedCounters = {
+            Journal: 0,
+            Conference: 0,
+            Workshop: 0,
+          };
 
-            const typePrefix = {
-              Journal: 'J',
-              Conference: 'C',
-              Workshop: 'W',
-            };
+          const typePrefix = {
+            Journal: 'J',
+            Conference: 'C',
+            Workshop: 'W',
+          };
 
-            publications.forEach(pub => {
-              assignedCounters[pub.type]++;
+          publications.forEach(pub => {
+            assignedCounters[pub.type]++;
 
-              // Descending number = total count - assigned + 1
-              const descendingNumber = countsByType[pub.type] - assignedCounters[pub.type] + 1;
+            // Descending number = total count - assigned + 1
+            const descendingNumber = countsByType[pub.type] - assignedCounters[pub.type] + 1;
 
-              const prefix = `[${typePrefix[pub.type]}${descendingNumber}]`;
+            const prefix = `[${typePrefix[pub.type]}${descendingNumber}]`;
 
-              const li = document.createElement('li');
-              li.classList.add('publication-item');
+            const li = document.createElement('li');
+            li.classList.add('publication-item');
 
-              const title = document.createElement('h3');
-              title.innerHTML = `<span class="publication-number">${prefix}</span> ${pub.title}`;
-              li.appendChild(title);
+            // Title and links container
+            const titleContainer = document.createElement('div');
+            titleContainer.style.display = 'flex';
+            titleContainer.style.flexWrap = 'wrap';
+            titleContainer.style.alignItems = 'center';
+            titleContainer.style.gap = '12px';
 
-              const authors = document.createElement('p');
-              authors.textContent = `Authors: ${pub.authors}`;
-              li.appendChild(authors);
+            const title = document.createElement('h3');
+            title.innerHTML = `<span class="publication-number">${prefix}</span> ${pub.title}`;
+            titleContainer.appendChild(title);
 
-              const venue = document.createElement('p');
-              venue.textContent = `Venue: ${pub.venue} (${pub.year})`;
-              venue.classList.add('venue');
-              li.appendChild(venue);
+            if (pub.pdf) {
+              const pdfLink = document.createElement('a');
+              pdfLink.href = pub.pdf;
+              pdfLink.textContent = '[PDF]';
+              pdfLink.target = '_blank';
+              pdfLink.classList.add('pdf-link');
+              titleContainer.appendChild(pdfLink);
+            }
 
-              if (pub.pdf) {
-                const pdfLink = document.createElement('a');
-                pdfLink.href = pub.pdf;
-                pdfLink.textContent = '[PDF]';
-                pdfLink.target = '_blank';
-                pdfLink.classList.add('pdf-link');
-                li.appendChild(pdfLink);
-              }
+            if (pub.code) {
+              const codeLink = document.createElement('a');
+              codeLink.href = pub.code;
+              codeLink.textContent = '[Code]';
+              codeLink.target = '_blank';
+              codeLink.classList.add('code-link');
+              titleContainer.appendChild(codeLink);
+            }
 
-              if (pub.code) {
-                const codeLink = document.createElement('a');
-                codeLink.href = pub.code;
-                codeLink.textContent = '[Code]';
-                codeLink.target = '_blank';
-                codeLink.classList.add('code-link');
-                li.appendChild(codeLink);
-              }
+            li.appendChild(titleContainer);
 
-              if (pub.note) {
-                const note = document.createElement('p');
-                note.textContent = `Note: ${pub.note}`;
-                note.classList.add('note');
-                li.appendChild(note);
-              }
+            const authors = document.createElement('p');
+            authors.textContent = `Authors: ${pub.authors}`;
+            li.appendChild(authors);
 
-              pubList.appendChild(li);
-            });
-          })
-          .catch(error => {
-            console.error('Error loading publications:', error);
-            const pubList = document.getElementById('pub-list');
-            pubList.innerHTML = '<li>Failed to load publications.</li>';
+            const venue = document.createElement('p');
+            venue.textContent = `Venue: ${pub.venue} (${pub.year})`;
+            venue.classList.add('venue');
+            li.appendChild(venue);
+
+            if (pub.note) {
+              const note = document.createElement('p');
+              note.textContent = `Note: ${pub.note}`;
+              note.classList.add('note');
+              li.appendChild(note);
+            }
+
+            pubList.appendChild(li);
           });
-      </script>
+        })
+        .catch(error => {
+          console.error('Error loading publications:', error);
+          const pubList = document.getElementById('pub-list');
+          pubList.innerHTML = '<li>Failed to load publications.</li>';
+        });
+    </script>
+
 
       </div>
     </main>
