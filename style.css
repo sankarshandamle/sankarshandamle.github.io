@@ -267,3 +267,39 @@ footer {
   background: linear-gradient(to right, transparent, var(--color-border), transparent);
   margin: 4rem 0;
 }
+
+
+/* Modern button-like links for profile links */
+.profile-links .btn-link {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 0 14px;
+  background: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 32px;
+  box-shadow:
+    0 4px 12px rgba(59, 130, 246, 0.3);
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.profile-links .btn-link:hover,
+.profile-links .btn-link:focus {
+  background: var(--color-accent-hover);
+  box-shadow:
+    0 6px 20px rgba(37, 99, 235, 0.5);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.profile-links .btn-link:active {
+  background: #1e40af; /* even darker blue */
+  box-shadow: none;
+  transform: translateY(0);
+}
