@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="toggle-header" aria-label="Toggle header" title="Hide/show header">▲</button>
   <div class="container">
   <header>
     <div class="profile-photo">
@@ -15,10 +14,6 @@
     </div>
     <h1>Sankarshan Damle</h1>
     <p>Researcher in Computer Science</p>
-
-    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-
-    <nav id="main-nav" class="collapsed">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#roles">Other Roles</a></li>
@@ -29,7 +24,6 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
   </header>
     <main>
       <section id="about">
@@ -174,21 +168,6 @@
       <footer>
         <p>&copy; 2025 Sankarshan Damle</p>
       </footer>
-
-    <script>
-      const toggleBtn = document.getElementById('toggle-header');
-      const header = document.querySelector('header');
-
-      toggleBtn.addEventListener('click', () => {
-        if (header.style.display === 'none') {
-          header.style.display = '';
-          toggleBtn.classList.remove('collapsed');
-        } else {
-          header.style.display = 'none';
-          toggleBtn.classList.add('collapsed');
-        }
-      });
-    </script>
 
     <script>
       fetch('publications.json')
