@@ -8,26 +8,28 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="profile-photo">
-        <!-- Add your photo here -->
-        <img src="sankarshandamle.jpg" alt="Sankarshan Damle" class="photo" />
-      </div>
-      <h1>Sankarshan Damle</h1>
-      <p>Researcher in Computer Science</p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#roles">Other Roles</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#talks">Talks</a></li>
-          <li><a href="#phd-thesis">Ph.D. Thesis</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <div class="profile-photo">
+      <img src="sankarshandamle.jpg" alt="Sankarshan Damle" class="photo" />
+    </div>
+    <h1>Sankarshan Damle</h1>
+    <p>Researcher in Computer Science</p>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+    <nav id="main-nav" class="collapsed">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#roles">Other Roles</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#phd-thesis">Ph.D. Thesis</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
     <main>
       <section id="about">
         <h2>About Me</h2>
@@ -173,6 +175,10 @@
       </footer>
 
     <script>
+        function toggleMenu() {
+          const nav = document.getElementById('main-nav');
+          nav.classList.toggle('collapsed');
+        }
       fetch('publications.json')
         .then(response => response.json())
         .then(publications => {

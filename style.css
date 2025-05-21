@@ -317,3 +317,40 @@ footer {
   color: #1d4ed8;
   outline: none;
 }
+
+
+/* Toggle button styling */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  nav.collapsed {
+    max-height: 0;
+  }
+
+  nav:not(.collapsed) {
+    max-height: 500px; /* enough to show all links */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
