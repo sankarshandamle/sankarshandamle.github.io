@@ -13,73 +13,87 @@ html, body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Layout Containers */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 24px;
+  padding: 0 24px;
   box-sizing: border-box;
 }
 
-/* Fixed Top Navigation Header */
+/* Sidebar Header */
 header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 15%;
+  min-width: 220px;
+  max-width: 320px;
+  height: 100vh;
   background-color: #ffffff;
-  padding: 16px 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 32px 28px;
+  box-shadow:
+    8px 8px 16px rgba(0, 0, 0, 0.12),
+    -8px -8px 16px rgba(255, 255, 255, 0.7);
+  border-radius: 0 16px 16px 0;
+  overflow-y: auto;
+  z-index: 10;
+  box-sizing: border-box;
 }
 
-/* Site Title or Logo */
-.site-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #1f2937;
-  user-select: none;
+/* Main Content */
+main {
+  margin-left: clamp(220px, 15%, 320px);
+  padding: 48px 40px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow:
+    8px 8px 24px rgba(0, 0, 0, 0.12),
+    -8px -8px 24px rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
 }
 
-/* Horizontal Navigation */
+/* Navigation */
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
-  gap: 24px;
+  flex-direction: column;
 }
 
 nav li {
-  margin: 0;
+  margin: 1px 0;
 }
 
 nav a {
   font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 6px;
-  display: inline-block;
+  padding: 2px 1px;
+  border-radius: 8px;
+  display: block;
   color: #222831;
-  text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
   background-color: #3b82f6;
   color: #fff;
-}
-
-/* Main content area */
-main {
-  margin-top: 80px; /* leave space for fixed header */
-  padding: 48px 40px;
-  background-color: #ffffff;
-  min-height: calc(100vh - 80px);
-  box-shadow:
-    8px 8px 24px rgba(0, 0, 0, 0.12),
-    -8px -8px 24px rgba(255, 255, 255, 0.7);
-  border-radius: 16px;
-  box-sizing: border-box;
-  transition: background-color 0.3s ease;
-  overflow-x: hidden;
+  text-decoration: none;
 }
 
 /* Section Headers */
@@ -129,6 +143,11 @@ footer {
 }
 
 /* Publication Item */
+.publication-item {
+  margin-bottom: 1.25rem;
+  list-style-type: none;
+}
+
 .publication-item h3 {
   font-size: 1.15rem;
   font-weight: 700;
@@ -160,7 +179,7 @@ footer {
   font-style: italic;
 }
 
-/* PDF and Code Links */
+/* Links for PDF and Code */
 .pdf-link,
 .code-link {
   color: #3b82f6;
@@ -232,7 +251,7 @@ footer {
   opacity: 1;
 }
 
-/* Section divider */
+/* Section divider with gradient */
 .section-divider {
   border: none;
   height: 1.5px;
@@ -240,13 +259,26 @@ footer {
   margin: 4rem 0;
 }
 
-/* Profile link buttons */
+/* Profile links button group */
+.profile-links.btn-group {
+  display: inline-flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+
+
+/* Wrapper that centers the links on the page */
 .profile-links-container {
   display: flex;
   justify-content: center;
   margin: 3rem 0;
 }
 
+/* Make sure .btn-group has appropriate padding and box feel */
 .profile-links.btn-group {
   display: inline-flex;
   border-radius: 12px;
@@ -257,6 +289,7 @@ footer {
   padding: 4px;
 }
 
+/* Individual Buttons */
 .profile-links.btn-group .btn {
   background-color: #f9fafb;
   color: #1f2937;
