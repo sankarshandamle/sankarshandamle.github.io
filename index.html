@@ -7,242 +7,136 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-  <header>
-    <div class="profile-photo">
-      <img src="sankarshandamle.jpg" alt="Sankarshan Damle" class="photo" />
-    </div>
+  <main>
     <h1>Sankarshan Damle</h1>
-    <p>Researcher in Computer Science</p>
-    <nav></nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a post-doctoral researcher at the Artificial Intelligence Laboratory (LIA), EPFL, under Prof. Boi Faltings.</p>
+      <p>Before that, I did my Ph.D. in Computer Science at Machine Learning Lab, IIIT Hyderabad, under Dr. Sujit Gujar. My Ph.D. was fully funded through the Ripple-IIITH Fellowship. I completed my Bachelor of Technology (w/ Honors) in Computer Science, also at IIIT Hyderabad.</p>
+      <p>My research focuses on designing fair, private, and strategy-proof mechanisms for multi-agent systems, combining insights from machine learning, game theory, and privacy. I have collaborated with researchers from premier institutions such as IIIT Hyderabad, EPFL, and HKUST, as well as industry labs including Microsoft Research India and Samsung Research India, working on real-world applications that require trustworthy and robust AI solutions.</p>
+      <p style="color: red; font-weight: bold; text-align: center; margin-top: 20px;">I am on the academic/industry job market — reach out if you see a fit.</p>
+
+      <p style="text-align: center;">
+        <a href="https://scholar.google.com/citations?user=ILd-Ig4AAAAJ&hl=en" target="_blank">Google Scholar</a> · 
+        <a href="https://dblp.uni-trier.de/pid/228/8509.html" target="_blank">DBLP</a> · 
+        <a href="https://drive.google.com/open?id=1LwbVR8LClkVwIvUgMHwyquF-qGtbUPTP" target="_blank">CV</a>
+      </p>
+    </section>
+
+    <section id="roles">
+      <h2>Other Roles</h2>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#roles">Other Roles</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#talks">Talks</a></li>
-        <li><a href="#phd-thesis">Ph.D. Thesis</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><strong>Microsoft Research India</strong>, Intern with Dr. Navin Goyal (Mar–Aug 2024)</li>
+        <li><strong>Microsoft Research India</strong>, Intern with Dr. Satya Lokam (Apr–Nov 2023)</li>
+        <li><strong>TalentSprint</strong>, Chief Mentor (Apr 2022–Mar 2023)</li>
+        <li><strong>Samsung Research India</strong>, Student Trainee (May–Jul 2021)</li>
+        <li><strong>EPFL LIA</strong>, Visiting Researcher (Mar–Jul 2020)</li>
+        <li><strong>HKUST Cybersecurity Lab</strong>, Visiting Researcher (Jul–Oct 2019)</li>
       </ul>
-    </nav>
-  </header>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am a post-doctoral researcher at the Artificial Intelligence Laboratory (LIA), EPFL, under Prof. Boi Faltings. </p>
+    </section>
 
-        <p>Before that, I did my Ph.D. in Computer Science at Machine Learning Lab, IIIT, Hyderabad, under Dr. Sujit Gujar.  My Ph.D. was fully funded through the Ripple-IIITH Fellowship. I completed my Bachelor of Technology (w/ Honors) in Computer Science, also at IIIT, Hyderabad.</p>
-        
-        <p> My research focuses on designing fair, private, and strategy-proof mechanisms for multi-agent systems, combining insights from machine learning, game theory, and privacy. I have collaborated with researchers from premier institutions such as IIIT Hyderabad, EPFL and HKUST, as well as industry labs including Microsoft Research India and Samsung Research India, working on real-world applications that require trustworthy and robust AI solutions.
-        </p>
-        
-        <p style="color: red; font-weight: bold; text-align: center; margin-top: 20px;">
-          I am on the academic/industry job market — reach out if you see a fit.
-        </p>
-        
-        
-        
-        <div class="profile-links-container">
-          <div class="profile-links btn-group">
-            <a href="https://scholar.google.com/citations?user=ILd-Ig4AAAAJ&hl=en" target="_blank" class="btn">Google Scholar</a>
-            <a href="https://dblp.uni-trier.de/pid/228/8509.html" target="_blank" class="btn">DBLP</a>
-            <a href="https://drive.google.com/open?id=1LwbVR8LClkVwIvUgMHwyquF-qGtbUPTP" target="_blank" class="btn">CV</a>
-          </div>
-        </div>
+    <section id="news">
+      <h2>News</h2>
+      <ul>
+        <li>[June '25] Adversarial FL work accepted at CFAgentic @ ICML'25</li>
+        <li>[Dec '24] Guest lecture at EPFL on transaction fee mechanisms</li>
+        <li>[Oct '24] NeurIPS Workshop papers with MSR India!</li>
+        <li>[Oct '24] Started Postdoc at EPFL LIA</li>
+        <li>[July '24] Fair Transaction Fees to appear at ECAI</li>
+        <li>[Apr '24] AVeCQ accepted at IEEE TDSC</li>
+        <li>[Mar '24] Joined MSR India, Bangalore</li>
+        <li>[Jan '24] Private Multi-agent Optimization accepted at JAAMAS</li>
+        <li>[Dec '23] Three papers accepted at AAMAS'24</li>
+      </ul>
+    </section>
 
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul id="pub-list">
+        <li>Loading publications...</li>
+      </ul>
+    </section>
 
-        
-      </section>
+    <section id="talks">
+      <h2>Talks</h2>
+      <ul>
+        <li><strong>Tutorial on Fair and Private Deep Learning</strong><br>
+        With Manisha Padala and Sujit Gujar, at ACM CODS-COMAD 2024<br>
+        <a href="https://github.com/magnetar-iiith/FairPrivateDL" target="_blank">Tutorial Material</a></li>
 
-      <hr class="section-divider" />
+        <li><strong>Guest Lecture: Transaction Fee Mechanism Design</strong><br>
+        EPFL, Fall 2024<br>
+        <a href="https://drive.google.com/file/d/1ZRVCLkiFF_uNAD3E_gMZm4zHY702VQ9s/view" target="_blank">Slides</a></li>
 
+        <li><strong>Guest Lecture: Intro to Differential Privacy</strong><br>
+        IIIT-H Ethics/Fairness course (2022–23)<br>
+        <a href="https://drive.google.com/file/d/168Jflg1nBtjwlEzVaFPRIAzxDenUbBpt/view?usp=sharing" target="_blank">Slides</a></li>
+      </ul>
+    </section>
 
-      <section id="roles">
-        <h2>Other Roles</h2>
-        <ul>
-          <li><span style="color: red;">Microsoft Research India</span>, Research Intern under Dr. Navin Goyal (March 2024-August 2024)</li>
-          <li><span style="color: red;">Microsoft Research India</span>, Research Intern under Dr. Satya Lokam (April 2023-November 2023)</li>
-          <li><span style="color: red;">TalentSprint</span>, Chief Mentor for Advanced Certificate Program in Blockchain and Distributed Ledger Technologies (April 2022-March 2023)</li>
-          <li><span style="color: red;">Samsung Research India</span>, Student Trainee, Ph.D. (May-July 2021)</li>
-          <li><span style="color: red;">Artificial Intelligence Laboratory (LIA), EPFL</span>, Visiting researcher under Prof. Boi Faltings (March-July 2020)</li>
-          <li><span style="color: red;">CyberSecurity Laboratory, HKUST</span>, Visiting researcher under Prof. Dimitris Papadopoulos (July-Oct 2019)</li>
-        </ul>
-      </section>
+    <section id="phd-thesis">
+      <h2>Ph.D. Dissertation</h2>
+      <p><strong>Title:</strong> <em>Designing Game-theoretically Sound, Fair, and Private Multi-agent Systems</em> <a href="https://drive.google.com/file/d/1KmL1KTxLxml2hlS0ON_eHJ9pLL71V5pl/view?usp=sharing" target="_blank">[PDF]</a></p>
+      <p><strong>Author:</strong> Sankarshan Damle</p>
+      <p>
+        🏅 Nominated for:<br>
+        • <strong>ACM India Doctoral Dissertation Award 2024</strong><br>
+        • <strong>IKDD Doctoral Dissertation Award 2024</strong>
+      </p>
+    </section>
 
-      <hr class="section-divider" />
+    <section id="services">
+      <h2>Professional Services</h2>
+      <p>PC Member: AAAI, AAMAS, IJCAI, ECAI, etc.</p>
+      <p>Reviewer: ICONIP, JAIR, IEEE TMC, IJPR, etc.</p>
+      <p>Volunteer: IJCAI 2019, CODS-COMAD 2020, ACML 2022, OAML 2022</p>
+    </section>
 
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: sankarshandamle [at] gmail.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/sankarshandamle">linkedin.com/in/sankarshandamle</a></p>
+    </section>
 
-      <section id="news">
-        <h2>News</h2>
-        <ul>
-          <li> [June '25] Our work on Adversarial Attacks for Compromising Group Fairness in FL accepted at CFAgentic @ ICML'25 </li>
-          <li>[Dec '24] Guest lecture on Transaction Fee Mechanism Design at EPFL</li>
-          <li>[Oct '24] Couple of works in collaboration with MSR India accepted at NeurIPS Workshops!</li>
-          <li>[Oct '24] Joined LIA, EPFL as a post-doctoral researcher under Prof. Boi Faltings</li>
-          <li>[July '24] Our work on Fairness in Transaction Fee Mechanisms to appear at ECAI</li>
-          <li>[Apr '24] Our work on "Anonymous and Verifiable Crowdsourcing" accepted for publication in IEEE TDSC</li>
-          <li>[Mar '24] Joined Microsoft Research India, Bangalore as a Research Intern</li>
-          <li>[Jan '24] Our work on "Differentially-private Multi-agent Constraint Optimization" accepted for publication in JAAMAS  </li>
-          <li>[Dec '23] Three papers (one full, two extended abstracts) accepted at AAMAS '24</li>
-        </ul>
-      </section>
-      
-      <hr class="section-divider" />
-
-
-      <section id="publications">
-        <h2>Publications</h2>
-        <ul id="pub-list">
-          <li>Loading publications...</li>
-        </ul>
-      </section>
-
-      <hr class="section-divider" />
-
-
-      <section id="talks">
-        <h2>Talks</h2>
-        <ul>
-          <li>
-            <strong>Tutorial on Fair and Private Deep Learning</strong><br>
-            Manisha Padala, Sankarshan Damle, and Sujit Gujar<br>
-            As part of the 7th Joint International Conference on Data Science & Management of Data (<em>ACM CODS-COMAD 2024</em>)<br>
-            <a href="https://github.com/magnetar-iiith/FairPrivateDL" target="_blank" rel="noopener noreferrer">
-              🧑‍💻 Tutorial Material
-            </a>
-          </li>
-          <li>
-            <strong>Guest Lecture on Transaction Fee Mechanism Design</strong><br>
-            Part of "Intelligent Systems" course at EPFL (Fall, 2024)<br>
-            <a href="https://drive.google.com/file/d/1ZRVCLkiFF_uNAD3E_gMZm4zHY702VQ9s/view" target="_blank" rel="noopener noreferrer">
-              📑 Slides
-            </a>
-          </li>
-          <li>
-            <strong>Guest Lecture on Introduction to Differential Privacy</strong><br>
-            Part of "Ethics, Fairness, and Privacy in AI" course at IIIT-Hyderabad (Fall, 2023 & 2022)<br>
-            <a href="https://drive.google.com/file/d/168Jflg1nBtjwlEzVaFPRIAzxDenUbBpt/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              📑 Slides
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <hr class="section-divider" />
-
-
-      <section id="phd-thesis">
-        <h2>Ph.D. Dissertation</h2>
-        <p>
-          <strong>Title:</strong> 
-          <em>Designing Game-theoretically Sound, Fair, and Private Multi-agent Systems</em>
-          <a href="https://drive.google.com/file/d/1KmL1KTxLxml2hlS0ON_eHJ9pLL71V5pl/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            [PDF]
-          </a><br>
-          <strong>Author:</strong> Sankarshan Damle<br>
-        </p>
-        <p>
-          🏅 Nominated by IIIT-Hyderabad for the <br>
-          • <strong>ACM India Doctoral Dissertation Award 2024</strong><br>
-          • <strong>IKDD Doctoral Dissertation Award 2024</strong>
-        </p>
-      </section>
-
-      <hr class="section-divider" />
-
-
-      <section id="services">
-        <h2>Professional Services</h2>
-        <p>Technical Program Committee Member: AAAI, AAMAS, ECAI, IJCAI, IJCAI (AI4G), WI-IAT, BLOCKCHAIN, GAIW@AAMAS, PPAI@AAAI</p>
-        <p>Reviewer for Conferences/Journals/Workshops including ICONIP, JAIR, IEEE TMC, IJPR, NeuroAI@NeurIPS, ContinualFoMo@NeurIPS, LLMReasoning@ICLR</p>
-        <p>Student Volunteer: IJCAI 2019, ACM CODS-COMAD 2020, ACML 2022, OAML 2022</p>
-      </section>
-
-      <hr class="section-divider" />
-
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: sankarshandamle [AT] gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/sankarshandamle">linkedin.com/in/sankarshandamle</a></p>
-      </section>
-
-      <footer>
-        <p>&copy; 2025 Sankarshan Damle</p>
-      </footer>
+    <footer>
+      &copy; 2025 Sankarshan Damle
+    </footer>
 
     <script>
       fetch('publications.json')
         .then(response => response.json())
         .then(publications => {
-          // Sort all publications by year descending
           publications.sort((a, b) => b.year - a.year);
-
           const pubList = document.getElementById('pub-list');
           pubList.innerHTML = '';
 
-          // Count how many publications per type
           const countsByType = {
             Journal: publications.filter(p => p.type === 'Journal').length,
             Conference: publications.filter(p => p.type === 'Conference').length,
             Workshop: publications.filter(p => p.type === 'Workshop').length,
           };
-
-          // Counters to track how many we have assigned so far per type
-          const assignedCounters = {
-            Journal: 0,
-            Conference: 0,
-            Workshop: 0,
-          };
-
-          const typePrefix = {
-            Journal: 'J',
-            Conference: 'C',
-            Workshop: 'W',
-          };
+          const assignedCounters = { Journal: 0, Conference: 0, Workshop: 0 };
+          const typePrefix = { Journal: 'J', Conference: 'C', Workshop: 'W' };
 
           publications.forEach(pub => {
             assignedCounters[pub.type]++;
-
-            // Descending number = total count - assigned + 1
-            const descendingNumber = countsByType[pub.type] - assignedCounters[pub.type] + 1;
-
-            const prefix = `[${typePrefix[pub.type]}${descendingNumber}]`;
+            const num = countsByType[pub.type] - assignedCounters[pub.type] + 1;
+            const prefix = `[${typePrefix[pub.type]}${num}]`;
 
             const li = document.createElement('li');
             li.classList.add('publication-item');
 
-            // Title and links container
-            const titleContainer = document.createElement('div');
-            titleContainer.style.display = 'flex';
-            titleContainer.style.flexWrap = 'wrap';
-            titleContainer.style.alignItems = 'center';
-            titleContainer.style.gap = '12px';
-
             const title = document.createElement('h3');
             title.innerHTML = `<span class="publication-number">${prefix}</span> ${pub.title}`;
-            titleContainer.appendChild(title);
+            li.appendChild(title);
 
-            if (pub.pdf) {
-              const pdfLink = document.createElement('a');
-              pdfLink.href = pub.pdf;
-              pdfLink.textContent = '[PDF]';
-              pdfLink.target = '_blank';
-              pdfLink.classList.add('pdf-link');
-              titleContainer.appendChild(pdfLink);
+            if (pub.pdf || pub.code) {
+              const links = document.createElement('p');
+              if (pub.pdf) links.innerHTML += `<a href="${pub.pdf}" class="pdf-link" target="_blank">[PDF]</a> `;
+              if (pub.code) links.innerHTML += `<a href="${pub.code}" class="code-link" target="_blank">[Code]</a>`;
+              li.appendChild(links);
             }
-
-            if (pub.code) {
-              const codeLink = document.createElement('a');
-              codeLink.href = pub.code;
-              codeLink.textContent = '[Code]';
-              codeLink.target = '_blank';
-              codeLink.classList.add('code-link');
-              titleContainer.appendChild(codeLink);
-            }
-
-            li.appendChild(titleContainer);
 
             const authors = document.createElement('p');
             authors.textContent = `Authors: ${pub.authors}`;
@@ -263,15 +157,10 @@
             pubList.appendChild(li);
           });
         })
-        .catch(error => {
-          console.error('Error loading publications:', error);
-          const pubList = document.getElementById('pub-list');
-          pubList.innerHTML = '<li>Failed to load publications.</li>';
+        .catch(err => {
+          document.getElementById('pub-list').innerHTML = '<li>Failed to load publications.</li>';
         });
     </script>
-
-
-      </div>
-    </main>
-  </body> 
+  </main>
+</body>
 </html>
