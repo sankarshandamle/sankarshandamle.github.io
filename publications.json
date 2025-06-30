@@ -189,6 +189,7 @@
     "venue": "CFAgentic @ ICML'25",
     "year": 2025,
     "type": "Workshop",
-    "note": "Code and other material to be made available soon!"
+    "pdf": "https://openreview.net/forum?id=cUp9yvJdPG",
+    "code": "https://github.com/sankarshandamle/LoRA-FL"
   }
 ]
