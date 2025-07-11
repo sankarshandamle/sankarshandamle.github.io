@@ -120,7 +120,13 @@
       fetch('publications.json')
         .then(response => response.json())
         .then(publications => {
-          publications.sort((a, b) => b.year - a.year);
+          // Sort by 'date' (YYYY-MM), falling back to year
+          publications.sort((a, b) => {
+            const dateA = a.date || `${a.year}-01`;
+            const dateB = b.date || `${b.year}-01`;
+            return dateB.localeCompare(dateA); // descending
+          });
+
           const pubList = document.getElementById('pub-list');
           pubList.innerHTML = '';
 
@@ -143,7 +149,6 @@
             const title = document.createElement('h3');
             let titleText = `${pub.title}`;
 
-            // (i) Add [PDF] and [Code] links *inline* with title
             let linkSuffix = '';
             if (pub.pdf) linkSuffix += ` <a href="${pub.pdf}" class="pdf-link" target="_blank">[PDF]</a>`;
             if (pub.code) linkSuffix += ` <a href="${pub.code}" class="code-link" target="_blank">[Code]</a>`;
@@ -151,7 +156,6 @@
             title.innerHTML = `<span class="publication-number">${prefix}</span> ${titleText}${linkSuffix}`;
             li.appendChild(title);
 
-            // (ii) Underline "Sankarshan Damle" in author list
             const authors = document.createElement('p');
             const highlightedAuthors = pub.authors.replace(/Sankarshan Damle/g, '<u>Sankarshan Damle</u>');
             authors.innerHTML = `Authors: ${highlightedAuthors}`;

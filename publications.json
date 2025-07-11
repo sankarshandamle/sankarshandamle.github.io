@@ -6,7 +6,8 @@
     "year": 2025,
     "pdf": "https://doi.org/10.1109/TDSC.2024.3396342",
     "code": "https://github.com/sankarshandamle/AVeCQ",
-    "type": "Journal"
+    "type": "Journal",
+    "date": "2025-01"
   },
   {
     "title": "Differentially Private Multi-Agent Constraint Optimization",
@@ -16,7 +17,8 @@
     "pdf": "https://rdcu.be/dAaCd",
     "code": "https://github.com/magnetar-iiith/PGiBBS",
     "note": "Early versions of this work also appeared at WI-IAT and PPAI@AAAI",
-    "type": "Journal"
+    "type": "Journal",
+    "date": "2024-03"
   },
   {
     "title": "Robust In-Context Learning via Multi-Armed Bandit-Based Partition Selection",
@@ -25,7 +27,8 @@
     "year": 2025,
     "pdf": "https://openreview.net/forum?id=NzERpVgzsC",
     "code": "https://github.com/vs666/RobustICL_MAB",
-    "type": "Workshop"
+    "type": "Workshop",
+    "date": "2025-04"
 },
   {
     "title": "How do Active Dendrite Networks Mitigate Catastrophic Forgetting?",
@@ -33,7 +36,8 @@
     "venue": "NeuroAI@NeurIPS (Poster)",
     "year": 2024,
     "pdf": "https://openreview.net/pdf?id=NoMgGHzJEG",
-    "type": "Workshop"
+    "type": "Workshop",
+    "date": "2024-12"
   },
   {
     "title": "Exploring Continual Fine-Tuning for Enhancing Language Ability in Large Language Models",
@@ -41,7 +45,8 @@
     "venue": "FITML@NeurIPS (Poster) and ContinualFoMo@NeurIPS (Oral)",
     "year": 2024,
     "pdf": "https://arxiv.org/pdf/2410.16006",
-    "type": "Workshop"
+    "type": "Workshop",
+    "date": "2024-12"
   },
   {
     "title": "No Transaction Fees? No Problem! Achieving Fairness in Transaction Fee Mechanism Design",
@@ -50,7 +55,8 @@
     "year": 2024,
     "pdf": "https://ebooks.iospress.nl/doi/10.3233/FAIA240924",
     "note": "First appeared as an Extended Abstract at AAMAS",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2024-10"
   },
   {
     "title": "Designing Redistribution Mechanisms for Reducing Transaction Fees in Blockchains",
@@ -58,7 +64,8 @@
     "venue": "AAMAS",
     "year": 2024,
     "pdf": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p416.pdf",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2024-05"
   },
   {
     "title": "Analyzing Crowdfunding of Public Projects Under Dynamic Beliefs",
@@ -67,7 +74,8 @@
     "year": 2024,
     "pdf": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2225.pdf",
     "note": "Extended Abstract",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2024-05"
   },
   {
     "title": "F3: Fair and Federated Face Attribute Classification with Heterogeneous Data",
@@ -76,7 +84,8 @@
     "year": 2023,
     "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-33374-3_38",
     "code": "https://github.com/magnetar-iiith/F3",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2023-05"
   },
   {
     "title": "Combinatorial Civic Crowdfunding with Budgeted Agents: Welfare Optimality at Equilibrium and Optimal Deviation",
@@ -85,7 +94,8 @@
     "year": 2023,
     "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/25693",
     "note": "A preliminary version of this work also appeared at GAIW@AAMAS",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2023-02"
   },
   {
     "title": "Differentially Private Federated Combinatorial Bandits with Constraint",
@@ -93,7 +103,8 @@
     "venue": "ECML PKDD",
     "year": 2022,
     "pdf": "https://link.springer.com/chapter/10.1007/978-3-031-26412-2_38",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2022-09"
   },
   {
     "title": "Tiramisu: Layering Consensus Protocols for Scalable and Secure Blockchains",
@@ -102,7 +113,8 @@
     "year": 2022,
     "pdf": "https://ieeexplore.ieee.org/document/9805562",
     "note": "A preliminary version of this work also appeared at GTiB@WINE",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2022-05"
   },
   {
     "title": "REFORM: Reputation Based Fair and Temporal Reward Framework for Crowdsourcing",
@@ -111,7 +123,8 @@
     "year": 2022,
     "pdf": "https://dl.acm.org/doi/abs/10.5555/3535850.3536064",
     "note": "Extended Abstract",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2022-05"
   },
   {
     "title": "Fair Federated Learning for Heterogeneous Face Data",
@@ -120,7 +133,8 @@
     "year": 2022,
     "pdf": "https://dl.acm.org/doi/abs/10.1145/3493700.3493750",
     "note": "Young Researchers' Symposium Track",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2022-10"
   },
   {
     "title": "Learning Equilibrium Contributions in Multi-project Civic Crowdfunding",
@@ -128,7 +142,8 @@
     "venue": "IEEE/WIC/ACM WI-IAT",
     "year": 2021,
     "pdf": "https://dl.acm.org/doi/abs/10.1145/3486622.3493918",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2021-10"
   },
   {
     "title": "Blockchain-based Practical Multi-agent Secure Comparison and its Application in Auctions",
@@ -137,7 +152,8 @@
     "year": 2021,
     "pdf": "https://dl.acm.org/doi/abs/10.1145/3486622.3493918",
     "note": "First appeared at AAMAS as an extended abstract",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2021-10"
   },
   {
     "title": "Federated Learning Meets Fairness and Differential Privacy",
@@ -146,8 +162,9 @@
     "year": 2021,
     "pdf": "https://link.springer.com/chapter/10.1007/978-3-030-92310-5_80",
     "code": "https://github.com/magnetar-iiith/FPFL",
-    "note": "Also received the Best Paper Award at the Deployable AI Conference (DAI)",
-    "type": "Conference"
+    "note": "🏅🏅🏅 Also received the Best Paper Award at the Deployable AI Conference (DAI)",
+    "type": "Conference",
+    "date": "2021-09"
   },
   {
     "title": "Designing Refund Bonus Schemes for Provision Point Mechanism in Civic Crowdfunding",
@@ -156,7 +173,8 @@
     "year": 2021,
     "pdf": "https://link.springer.com/chapter/10.1007/978-3-030-89188-6_2",
     "note": "A preliminary version of this work also appeared at GAIW@AAMAS",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2021-05"
   },
   {
     "title": "FASTEN: Fair and Secure Distributed Voting Using Smart Contracts",
@@ -164,7 +182,8 @@
     "venue": "IEEE ICBC",
     "year": 2021,
     "pdf": "https://ieeexplore.ieee.org/document/9805562",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2021-05"
   },
   {
     "title": "Civic Crowdfunding for Agents with Negative Valuations and Agents with Asymmetric Beliefs",
@@ -172,7 +191,8 @@
     "venue": "IJCAI",
     "year": 2019,
     "pdf": "https://dl.acm.org/doi/10.5555/3367032.3367063",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2019-08"
   },
   {
     "title": "Aggregating Citizen Preferences for Public Projects Through Civic Crowdfunding",
@@ -181,7 +201,8 @@
     "year": 2019,
     "pdf": "https://dl.acm.org/doi/10.5555/3306127.3331963",
     "note": "Extended Abstract",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2019-05"
   },
   {
     "title": "LoRA-FL: A Low-Rank Adversarial Attack for Compromising Group Fairness in Federated Learning",
@@ -190,7 +211,8 @@
     "year": 2025,
     "type": "Workshop",
     "pdf": "https://openreview.net/forum?id=cUp9yvJdPG",
-    "code": "https://github.com/sankarshandamle/LoRA-FL"
+    "code": "https://github.com/sankarshandamle/LoRA-FL",
+    "date": "2025-07"
   },
   {
     "title": "LLMs for Resource Allocation: A Participatory Budgeting Approach to Inferring Preferences",
@@ -198,6 +220,7 @@
     "venue": "ECAI",
     "year": 2025,
     "note": "Paper draft and code will be available soon!",
-    "type": "Conference"
+    "type": "Conference",
+    "date": "2025-10"
   }
 ]
