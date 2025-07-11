@@ -191,5 +191,13 @@
     "type": "Workshop",
     "pdf": "https://openreview.net/forum?id=cUp9yvJdPG",
     "code": "https://github.com/sankarshandamle/LoRA-FL"
+  },
+  {
+    "title": "LLMs for Resource Allocation: A Participatory Budgeting Approach to Inferring Preferences",
+    "authors": "Sankarshan Damle and Boi Faltings",
+    "venue": "ECAI",
+    "year": 2025,
+    "note": "Paper draft and code will be available soon",
+    "type": "Conference"
   }
 ]
