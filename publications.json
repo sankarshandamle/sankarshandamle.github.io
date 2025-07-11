@@ -33,7 +33,7 @@
   {
     "title": "How do Active Dendrite Networks Mitigate Catastrophic Forgetting?",
     "authors": "Sankarshan Damle, Satya Lokam, Navin Goyal",
-    "venue": "NeuroAI@NeurIPS (Poster)",
+    "venue": "NeuroAI@NeurIPS",
     "year": 2024,
     "pdf": "https://openreview.net/pdf?id=NoMgGHzJEG",
     "type": "Workshop",
@@ -42,7 +42,7 @@
   {
     "title": "Exploring Continual Fine-Tuning for Enhancing Language Ability in Large Language Models",
     "authors": "Divyanshu Aggarwal*, Sankarshan Damle*, Navin Goyal, Satya Lokam, Sunayana Sitaram",
-    "venue": "FITML@NeurIPS (Poster) and ContinualFoMo@NeurIPS (Oral)",
+    "venue": "FITML@NeurIPS and ContinualFoMo@NeurIPS",
     "year": 2024,
     "pdf": "https://arxiv.org/pdf/2410.16006",
     "type": "Workshop",
