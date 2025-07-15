@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=CMU+Serif&display=swap');
 
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-row h1 {
+  margin-bottom: 0;
+}
+.header-row img {
+  max-height: 140px;
+  border-radius: 8px;
+}
+
+
 body {
   font-family: 'CMU Serif', Georgia, serif;
   font-size: 16px;
