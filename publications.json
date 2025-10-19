@@ -222,5 +222,14 @@
     "type": "Conference",
     "date": "2025-10",
     "pdf": "https://arxiv.org/pdf/2508.06060"
+  },
+  {
+  "title": "COSMIR: Chain Orchestrated Structured Memory for Iterative Reasoning over Long Context",
+  "authors": "Naman Gupta, Shreeyash Gowaikar, Arun Iyer, Kirankumar Shiragur, Ramakrishna B. Bairi, Rishikesh Maurya, Ritabrata Maiti, Sankarshan Damle, and Shachee Mishra Gupta",
+  "venue": "First Workshop on Foundations of Reasoning in Language Models @ NeurIPS",
+  "year": 2025,
+  "type": "Workshop",
+  "pdf": "https://openreview.net/forum?id=rQ1hAQqrd4",
+  "date": "2025-12"
   }
 ]
