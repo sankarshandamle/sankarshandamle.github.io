@@ -231,5 +231,14 @@
   "type": "Workshop",
   "pdf": "https://www.arxiv.org/pdf/2510.04568",
   "date": "2025-12"
+  },
+  {
+  "title": "Truthful Reverse Auctions for Adaptive Selection via Contextual Multi-Armed Bandits",
+  "authors": "Pronoy Patra, Sankarshan Damle, Manisha Padala, and Sujit Gujar",
+  "venue": "AAMAS",
+  "year": 2026,
+  "type": "Conference",
+  "pdf": "https://openreview.net/forum?id=7a9WBSScIp",
+  "date": "2026-05"
   }
 ]
