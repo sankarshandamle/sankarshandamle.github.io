@@ -240,5 +240,23 @@
   "type": "Conference",
   "pdf": "https://openreview.net/forum?id=7a9WBSScIp",
   "date": "2026-05"
+  },
+  {
+    "title": "Rethinking LLMs as Verifiers: When Verification is Harder Than Solving",
+    "authors": "Varul Srivastava, Sankarshan Damle, and Manisha Padala",
+    "venue": "ICLR 2026 Workshop LLM Reasoning",
+    "year": 2026,
+    "type": "Workshop",
+    "pdf": "https://openreview.net/forum?id=4jnJjSgQC1",
+    "date": "2026-04"
+  },
+  {
+    "title": "Chow–Liu Ordering for Long-Context Reasoning in Chain-of-Agents",
+    "authors": "Naman Gupta, Vaibhav Singh, Arun Iyer, Kirankumar Shiragur, Pratham Grover, Ramakrishna B Bairi, Ritabrata Maiti, Sankarshan Damle, Shachee Mishra Gupta, Rishikesh Maurya, and Vageesh D C",
+    "venue": "ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems ",
+    "year": 2026,
+    "type": "Workshop",
+    "pdf": "https://openreview.net/forum?id=krfs16Y8SA",
+    "date": "2026-04"
   }
 ]
