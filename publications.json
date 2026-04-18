@@ -40,13 +40,14 @@
     "date": "2024-12"
   },
   {
-    "title": "Exploring Continual Fine-Tuning for Enhancing Language Ability in Large Language Models",
+    "title": "Exploring Two-Phase Continual Instruction Fine-tuning for Multilingual Adaptation in Large Language Models",
     "authors": "Divyanshu Aggarwal*, Sankarshan Damle*, Navin Goyal, Satya Lokam, Sunayana Sitaram",
-    "venue": "FITML@NeurIPS and ContinualFoMo@NeurIPS",
-    "year": 2024,
+    "venue": "ACL (Findings)",
+    "year": 2026,
     "pdf": "https://arxiv.org/pdf/2410.16006",
-    "type": "Workshop",
-    "date": "2024-12"
+    "type": "Conference",
+    "date": "2026-07",
+    "note": "Preliminary versions also appeared at FITML@NeurIPS and ContinualFoMo@NeurIPS"
   },
   {
     "title": "No Transaction Fees? No Problem! Achieving Fairness in Transaction Fee Mechanism Design",
